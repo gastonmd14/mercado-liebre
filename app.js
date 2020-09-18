@@ -12,7 +12,7 @@ app.get('/', function (req, res) {
 
 app.get('*', function(req, res) {
 	if (req.url.endsWith('css')) {
-	    let file = path.resolve('.' + req.url);
+		let file = path.resolve('.' + req.url);
 	    return res.sendFile(file);
 	};
 	let image = ['jpg', 'jpeg', 'gif', 'png', 'svg'];
@@ -22,4 +22,5 @@ app.get('*', function(req, res) {
 	    return res.sendFile(file);
 	};
 });
+
 
