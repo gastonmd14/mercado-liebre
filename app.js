@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
-const fs = require('fs');
 const path = require('path');
+
 
 app.listen(3000, () => console.log('Server Running on Port 3000'));
 
@@ -11,10 +11,9 @@ app.get('/', function(req, res) {
 });
 
 app.get('*', function(req, res) {
-	if (req.url.includes('.')) {
-		let file = path.resolve('.' + req.url)
-		return res.sendFile(file)
-	}
-	res.send('Not found');
+    if (req.url.includes('.')) {
+        let file = path.resolve('.' + req.url)
+        return res.sendFile(file)
+    }
+    res.send('Not Found');
 });
-
