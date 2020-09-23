@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="public/styles/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <main id="logo">
+            <img src="public/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre">
+            <p>Buscar productos, marcas y más.</p>
+            <i class="fas fa-hand-holding-usd"></i>
+            <p>Comprá en cuotas y sin tarjeta de crédito</p>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="*">Ofertas</a>
+                    </li>
+                    <li>
+                        <a href="*">Tiendas Oficiales</a>
+                    </li>
+                    <li>
+                        <a href="*">Vender</a>
+                    </li>
+                    <li>
+                        <a href="*">Ayuda</a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="http://localhost:3000/register">Creá tu cuenta</a>
+                        <i class="far fa-id-card"></i>
+                    </li>
+                    <li>
+                        <a href="http://localhost:3000/login">Ingresá</a>
+                        <i class="fas fa-sign-in-alt"></i>
+                    </li>
+                    <li>
+                        <a href="*">Mis compras</a>
+                        <i class="fas fa-shopping-basket"></i>
+                    </li>
+                </ul>
+            </nav>
+        </main>
+        <div>
+            <form action="register" method="POST">
+                <div>
+                    <input type=”text” name=”nombre” id=”nombre” placeholder="Nombre y Apellido">
+                    <input type=”text” name=”nombre” id=”nombre” placeholder="Nombre de Usuario">
+                    <input type=”email” name=”email” id=”email” placeholder="E-mail">	
+                </div>
+                <div>
+                    <label for="">Fecha de Nacimiento</label>
+                    <input type="date" name="date" id="date">
+                </div>
+                <div>
+                    <label for="">Perfil del Usuario</label>
+                    <input type="radio" name="perfil" value="Comprador">
+                    <label for="">Comprador</label>
+                    <input type="radio" name="perfil" value="Vendedor">
+                    <label for="">Vendedor</label>
+                </div>
+                <div>
+                    <label for="">Intereses</label>
+                    <input type="checkbox" name="electro" value="electro">
+                    <label for="">Electro</label>
+                    <input type="checkbox" name="moda" value="moda">
+                    <label for="">Moda</label>
+                    <input type="checkbox" name="hogar" value="hogar">
+                    <label for="">Hogar</label>
+                    <input type="checkbox" name="jugueteria" value="jugueteria">
+                    <label for="">Jugueteria</label>
+                    <input type="checkbox" name="vidasana" value="visasana">
+                    <label for="">Visa Sana</label>
+                </div>
+                <div>
+                    <label for="">Elegi tu foto de usuario</label>
+                    <input type="file">
+                </div>
+                <div>
+                    <input type="password" name="password" id="password" placeholder="Elegi tu contraseña">	
+                    <input type="password" name="password" id="password" placeholder="Confirma tu contraseña">	
+                </div>
+                <div></div>
+                    <button type=”submit”>Enviar</buttom>
+                    <button type="reset">Borrar</buttom>
+                </div>
+            </form>
+        </div>
+    </header>
+    <footer id="pie">
+        <section id="datos1">
+            <article id="articulo9">
+                <i class="fas fa-credit-card"></i>
+                <h3>Pagá con tarjeta o en efectivo</h3>
+                <p>Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivoen puntos de pago. ¡Y siempre es seguro!</p>
+            </article>
+            <article id="articulo10">
+                <i class="fas fa-gift"></i>
+                <h3>Envío gratis desde los $ 2.500</h3>
+                <p>Solo por estar registrad@ en MercadoLiebre tenés envíos gratis en miles de productos. Es un beneficio de MercadoPuntos.</p>
+            </article>
+            <article id="articulo11">
+                <i class="fas fa-user-shield"></i>
+                <h3>Seguridad, de principio a fin</h3>
+                <p>¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer porque estás siempre prtegid@.</p>
+            </article>
+        </section>
+        <section id="datos2">
+            <article id="articulo12">
+                <p>Copyright © 1999-2019 MercadoLiebre S.R.L.</p>
+            </article>
+        </section>
+    </footer>
+</body>
+</html>
